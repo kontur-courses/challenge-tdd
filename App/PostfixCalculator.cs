@@ -13,7 +13,7 @@ namespace App
             if (postfixExpression == null)
                 throw new FormatException();
             if (postfixExpression == string.Empty)
-                return 0.ToString();
+                return LongComplex.Zero.ToString();
 
             var tokens = postfixExpression.Split(' ');
             var stack = new Stack<string>();
@@ -24,8 +24,8 @@ namespace App
                     var operation = token;
                     if (stack.Count < 2)
                         throw new FormatException();
-                    var second = int.Parse(stack.Pop());
-                    var first = int.Parse(stack.Pop());
+                    var second = LongComplex.Parse(stack.Pop());
+                    var first = LongComplex.Parse(stack.Pop());
                     var calculated = Calculate(operation, first, second).ToString();
                     stack.Push(calculated);
                 }
@@ -37,17 +37,17 @@ namespace App
             if (stack.Count != 1)
                 throw new FormatException();
             var result = stack.Pop();
-            return int.Parse(result).ToString();
+            return LongComplex.Parse(result).ToString();
         }
 
-        private static int Calculate(string operation, int operand1, int operand2)
+        private static LongComplex Calculate(string operation, LongComplex operand1, LongComplex operand2)
         {
             if (operation == "+")
-                return operand1 + operand2;
+                return LongComplex.Add(operand1, operand2);
             if (operation == "-")
-                return operand1 - operand2;
+                return LongComplex.Subtract(operand1, operand2);
             if (operation == "*")
-                return operand1 * operand2;
+                return LongComplex.Multiply(operand1, operand2);
             throw new FormatException();
         }
     }
