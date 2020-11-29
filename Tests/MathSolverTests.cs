@@ -37,32 +37,32 @@ namespace Tests
         }
 
 
-        //[TestCase("i", ExpectedResult = "i")]
-        //[TestCase("1i", ExpectedResult = "i")]
-        //[TestCase("4i", ExpectedResult = "4i")]
-        //[TestCase("-4i", ExpectedResult = "-4i")]
-        //[TestCase("3+4i", ExpectedResult = "3+4i")]
-        //[TestCase("4i+3", ExpectedResult = "3+4i")]
-        //[TestCase("-3+4i", ExpectedResult = "-3+4i")]
-        //[TestCase("-3-4i", ExpectedResult = "-3-4i")]
-        //[TestCase("3i+4i", ExpectedResult = "7i")]
-        //[TestCase("3i-4i", ExpectedResult = "-i")]
-        //[TestCase("3i-5i", ExpectedResult = "-2i")]
-        //[TestCase("2*3i", ExpectedResult = "6i")]
-        //[TestCase("2i*3", ExpectedResult = "6i")]
-        //[TestCase("-2i*3", ExpectedResult = "-6i")]
-        //[TestCase("-2*3i", ExpectedResult = "-6i")]
-        //[TestCase("2i*3i", ExpectedResult = "-6")]
-        //[TestCase("-2i*3i", ExpectedResult = "6")]
-        //[TestCase("3+7i+5+4i", ExpectedResult = "8+11i")]
-        //[TestCase("(3+7i)+(5+4i)", ExpectedResult = "8+11i")]
-        //[TestCase("3+(7i+5)+4i", ExpectedResult = "8+11i")]
-        //[TestCase("(3+7i)*(5+4i)", ExpectedResult = "-13+47i")]
-        //[TestCase("(7i+3)*(4i+5)", ExpectedResult = "-13+47i")]
-        //[TestCase("(-3+7i)*(5+4i)", ExpectedResult = "-43+23i")]
-        //public string SolverCanSolveComplexNumbers(string question)
-        //{
-        //    return MathSolver.Solve(question);
-        //}
+        [TestCase("i", ExpectedResult = "i")]
+        [TestCase("1i", ExpectedResult = "i")]
+        [TestCase("4i", ExpectedResult = "4i")]
+        [TestCase("-4i", ExpectedResult = "-4i")]
+        [TestCase("3+4i", ExpectedResult = "3+4i")]
+        [TestCase("4i+3", ExpectedResult = "3+4i")]
+        [TestCase("-3+4i", ExpectedResult = "-3+4i")]
+        [TestCase("-3-4i", ExpectedResult = "-3-4i")]
+        [TestCase("3i+4i", ExpectedResult = "7i")]
+        [TestCase("3i-4i", ExpectedResult = "-i")]
+        [TestCase("3i-5i", ExpectedResult = "-2i")]
+        [TestCase("2*3i", ExpectedResult = "6i")]
+        [TestCase("2i*3", ExpectedResult = "6i")]
+        [TestCase("-2i*3", ExpectedResult = "-6i")]
+        [TestCase("-2*3i", ExpectedResult = "-6i")]
+        [TestCase("2i*3i", ExpectedResult = "-6")]
+        [TestCase("-2i*3i", ExpectedResult = "6")]
+        [TestCase("3+7i+5+4i", ExpectedResult = "8+11i")]
+        [TestCase("(3+7i)+(5+4i)", ExpectedResult = "8+11i")]
+        [TestCase("3+(7i+5)+4i", ExpectedResult = "8+11i")]
+        [TestCase("(3+7i)*(5+4i)", ExpectedResult = "-13+47i")]
+        [TestCase("(7i+3)*(4i+5)", ExpectedResult = "-13+47i")]
+        [TestCase("(-3+7i)*(5+4i)", ExpectedResult = "-43+23i")]
+        public string SolverCanSolveComplexNumbers(string question)
+        {
+            return MathSolver.Solve(question);
+        }
     }
 }
