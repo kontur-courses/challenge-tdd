@@ -6,35 +6,35 @@ namespace Tests
     [TestFixture]
     public class MathSolverTests
     {
-        //[TestCase("21", ExpectedResult = "21")]
-        //[TestCase("-21", ExpectedResult = "-21")]
+        [TestCase("21", ExpectedResult = "21")]
+        [TestCase("-21", ExpectedResult = "-21")]
 
-        //[TestCase("21+35", ExpectedResult = "56")]
-        //[TestCase("21-35", ExpectedResult = "-14")]
-        //[TestCase("35-21", ExpectedResult = "14")]
-        //[TestCase("21*35", ExpectedResult = "735")]
-        //[TestCase("0*35", ExpectedResult = "0")]
-        //[TestCase("21*0", ExpectedResult = "0")]
+        [TestCase("21+35", ExpectedResult = "56")]
+        [TestCase("21-35", ExpectedResult = "-14")]
+        [TestCase("35-21", ExpectedResult = "14")]
+        [TestCase("21*35", ExpectedResult = "735")]
+        [TestCase("0*35", ExpectedResult = "0")]
+        [TestCase("21*0", ExpectedResult = "0")]
 
-        //[TestCase("57+21+35", ExpectedResult = "113")]
-        //[TestCase("57-21-35", ExpectedResult = "1")]
-        //[TestCase("57+21-35-44+19", ExpectedResult = "18")]
+        [TestCase("57+21+35", ExpectedResult = "113")]
+        [TestCase("57-21-35", ExpectedResult = "1")]
+        [TestCase("57+21-35-44+19", ExpectedResult = "18")]
 
-        //[TestCase("57*21*35", ExpectedResult = "41895")]
+        [TestCase("57*21*35", ExpectedResult = "41895")]
 
-        //[TestCase("57+21*35", ExpectedResult = "792")]
-        //[TestCase("57+21*35+44", ExpectedResult = "836")]
-        //[TestCase("57*21+35", ExpectedResult = "1232")]
-        //[TestCase("57*21+35*44", ExpectedResult = "2737")]
+        [TestCase("57+21*35", ExpectedResult = "792")]
+        [TestCase("57+21*35+44", ExpectedResult = "836")]
+        [TestCase("57*21+35", ExpectedResult = "1232")]
+        [TestCase("57*21+35*44", ExpectedResult = "2737")]
 
-        //[TestCase("3*(5+4)", ExpectedResult = "27")]
-        //[TestCase("(5+4)*3", ExpectedResult = "27")]
-        //[TestCase("(7+2)*(3+5)", ExpectedResult = "72")]
-        //[TestCase("1+(7*(2+3*5+9))-2", ExpectedResult = "181")]
-        //public string SolverCanSolveRealNumbers(string question)
-        //{
-        //    return MathSolver.Solve(question);
-        //}
+        [TestCase("3*(5+4)", ExpectedResult = "27")]
+        [TestCase("(5+4)*3", ExpectedResult = "27")]
+        [TestCase("(7+2)*(3+5)", ExpectedResult = "72")]
+        [TestCase("1+(7*(2+3*5+9))-2", ExpectedResult = "181")]
+        public string SolverCanSolveRealNumbers(string question)
+        {
+            return MathSolver.Solve(question);
+        }
 
 
         //[TestCase("i", ExpectedResult = "i")]
