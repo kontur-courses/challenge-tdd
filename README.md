@@ -1,4 +1,5 @@
 # Сhallenge TDD
+[![.NET](https://github.com/kontur-courses/challenge-tdd/actions/workflows/dotnet.yml/badge.svg)](https://github.com/kontur-courses/challenge-tdd/actions/workflows/dotnet.yml)
 
 Задание по TDD в рамках темы eXtreme Programming
 
